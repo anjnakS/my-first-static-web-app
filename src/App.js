@@ -1,8 +1,10 @@
 import React from 'react';
-
+function sayHello() {
+  alert('You clicked me!');
+}
 function App() {
   const value = 'World';
-  return <div>Hello {value} Create a button to take you to client.</div>;
+  return <div>Hello {value} <button onClick={sayHello}>Go to Stocks Application</button></div>;
 }
 
 export default App;
